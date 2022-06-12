@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="
+  https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <header class="crypto-header">
+      <div class="crypto-header__left">
+        <a href="#" class="crypto-header__logo"><img src="./img/logo.png" alt="logo" /></a>
+        <div class="crypto-header__form hidden-mobile hidden-tabl">
+          <select name="crypto_select" class="crypto-header__select">
+            <option value="btc/usd">btc/usd</option>
+            <option value="eth/usd">eth/usd</option>
+          </select>
+          <label class="crypto-header__label" for="crypto_select">currency pair</label>
+        </div>
+      </div>
+      <div class="crypto-header__right">
+        <div class="crypto-header__info hidden-mobile hidden-tabl">
+          <div class="crypto-header__lasttime crypto-header__market">
+            <div class="crypto-header__value">
+              <span class="crypto__value">5052</span><span class="crypto__divider">.</span><span class="crypto__fractional">68</span><span class="crypto__currency">USD</span>
+            </div>
+            <div class="crypto-header__label">last trade price</div>
+          </div>
+          <div class="crypto-header__change crypto-header__market">
+            <div class="crypto-header__value failed">
+              <span class="crypto__sign">-</span
+              ><span class="crypto__value">1</span
+              ><span class="crypto__divider">.</span
+              ><span class="crypto__fractional">68</span
+              ><span class="crypto__currency">USD</span>
+            </div>
+            <div class="crypto-header__label">price change</div>
+          </div>
+        </div>
+        <div class="crypto-header__balance hidden-mobile hidden-tabl">
+          <div class="crypto-header__coin crypto-header__market">
+            <div class="crypto-header__value">
+              <span class="crypto__value">0</span
+              ><span class="crypto__divider">.</span
+              ><span class="crypto__fractional">01350</span
+              ><span class="crypto__currency">BTC</span>
+            </div>
+            <div class="crypto-header__label">BTC balance</div>
+          </div>
+          <div class="crypto-header__balance crypto-header__market">
+            <div class="crypto-header__value accent">
+              <span class="crypto__value">100,000</span
+              ><span class="crypto__divider">.</span
+              ><span class="crypto__fractional">000</span
+              ><span class="crypto__currency">USD</span>
+            </div>
+            <div class="crypto-header__label">account balance</div>
+          </div>
+        </div>
+
+        <div class="crypto-header__profile">
+          <div class="crypto-header__user">
+            <div class="crypto-header__username">Nguyen Nguyen</div>
+            <div class="crypto-header__submenu">
+              username
+              <i class="fa fa-caret-down"></i>
+            </div>
+          </div>
+  
+          <div class="crypto-header__avatar"><img src="./img/profile.png" class="crypto-header__image" alt="avatar" c/></div>
+        </div>
+      </div>
+
+    </header>
+    <section class="main">
+      <h2 class="section-title hidden-all">main section</h2>
+      <div class="sidenav">
+        <a href="#" id="sidenav-btn" class="sidenav__btn">
+          <i class="la la-bars"></i>
+          <span class="sidenav__label">order set</span>
+        </a>
+      </div>
+      <div class="crypto">
+        <a class="close" href="#" id="close_btn"><i class="la la-times"></i></a>
+        <div class="crypto__row">
+          <div class="crypto__col">
+            <div class="crypto__section">
+              <div class="crypto__head">
+                <h3 class="crypto__title">order set</h3>
+              </div>
+              <div class="crypto__body">
+                <nav class="crypto__nav">
+                  <ul class="crypto__ul">
+                    <li class="crypto__li">
+                      <a class="crypto__link active" href="#">limit</a>
+                    </li>
+                    <li class="crypto__li">
+                      <a class="crypto__link" href="#">market</a>
+                    </li>
+                    <li class="crypto__li">
+                      <a class="crypto__link" href="#">stop</a>
+                    </li>
+                  </ul>
+                </nav>
+                <form class="crypto_form" id="crypto_form_1" action="#">
+                  <div class="crypto_form__row">
+                    <div class="crypto_form__column">
+                      <label class="crypto_form__label" for="crypto_form__amount"
+                        >amount</label
+                      >
+                      <input
+                        class="crypto_form__input"
+                        id="crypto_form__amount"
+                        type="text"
+                        name="amount"
+                      />
+                    </div>
+                    <div class="crypto_form__column">
+                      <label class="crypto_form__label" for="crypto_form__price"
+                        >price</label
+                      >
+                      <input
+                        class="crypto_form__input"
+                        id="crypto_form__price"
+                        type="text"
+                        name="amount"
+                      />
+                    </div>
+                  </div>
+                  <div class="crypto_form__row">
+                    <div class="crypto_form__column">
+                      <label class="crypto_form__label" for="crypto_form__select"
+                        >advance
+                        <select
+                          class="crypto_form__select"
+                          id="crypto_form__select"
+                          name="crypto_form__select"
+                        >
+                          <option value="continue">continue</option>
+                          <option value="cancel">good'til canceled</option>
+                        </select>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="crypto_form__row">
+                    <div class="crypto_form__column">
+                      <input
+                        class="crypto_form__submit crypto_form__buy"
+                        type="submit"
+                        name="buy_btn"
+                        value="buy"
+                      />
+                    </div>
+                    <div class="crypto_form__column">
+                      <input
+                        class="crypto_form__submit crypto_form__sell"
+                        type="submit"
+                        name="sell_btn"
+                        value="sell"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="crypto__section inactive has-table">
+              <div class="crypto__head">
+                <h3 class="crypto__title">orders</h3>
+                <a class="close" href="#" id="close_btn"
+                  ><i class="la la-times"></i
+                ></a>
+              </div>
+              <div class="crypto__body">
+                <nav class="crypto__nav">
+                  <ul class="crypto__ul">
+                    <li class="crypto__li">
+                      <a class="crypto__link active" href="#">inquiry</a>
+                    </li>
+                    <li class="crypto__li">
+                      <a class="crypto__link" href="#">history</a>
+                    </li>
+                  </ul>
+                </nav>
+                <table class="crypto_table" id="crypto__history">
+                  <thead class="thead crypto_table__head">
+                    <tr class="crypto_table__row">
+                      <th class="crypto_table__heading">time</th>
+                      <th class="crypto_table__heading">price</th>
+                      <th class="crypto_table__heading">status</th>
+                      <th class="crypto_table__heading">
+                        <a href="#" class="crypto__remove" id="crypto__remove"
+                          ><i class="la la-trash"> </i
+                        ></a>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody class="crypto_table__body">
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data">
+                        <span class="crypto__time"
+                          ><span class="crypto__date">2016 oct 01</span
+                          ><span class="crypto__hour">15:00:29</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">600</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">15</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <i class="la la-check-circle success"></i>
+                      </td>
+                      <td class="crypto_table__data">
+                        <a href="#" class="crypto__remove"
+                          ><i class="la la-trash"> </i
+                        ></a>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data">
+                        <span class="crypto__time"
+                          ><span class="crypto__date">2016 oct 01</span
+                          ><span class="crypto__hour">15:00:29</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <span class="crypto__number price_down"
+                          ><span class="crypto__value">600</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">15</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <i class="la la-times-circle failed"></i>
+                      </td>
+                      <td class="crypto_table__data">
+                        <a href="#" class="crypto__remove"
+                          ><i class="la la-trash"></i
+                        ></a>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data">
+                        <span class="crypto__time"
+                          ><span class="crypto__date">2016 oct 01</span
+                          ><span class="crypto__hour">15:00:29</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">600</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">15</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <i class="la la-sync on_hold"></i>
+                      </td>
+                      <td class="crypto_table__data">
+                        <a href="#" class="crypto__remove"
+                          ><i class="la la-trash"> </i
+                        ></a>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data">
+                        <span class="crypto__time"
+                          ><span class="crypto__date">2016 oct 01</span
+                          ><span class="crypto__hour">15:00:29</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">600</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">15</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <i class="la la-sync on_hold"></i>
+                      </td>
+                      <td class="crypto_table__data">
+                        <a href="#" class="crypto__remove"
+                          ><i class="la la-trash"> </i
+                        ></a>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data">
+                        <span class="crypto__time"
+                          ><span class="crypto__date">2016 oct 01</span
+                          ><span class="crypto__hour">15:00:29</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">600</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">15</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <i class="la la-sync on_hold"></i>
+                      </td>
+                      <td class="crypto_table__data">
+                        <a href="#" class="crypto__remove"
+                          ><i class="la la-trash"> </i
+                        ></a>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data">
+                        <span class="crypto__time"
+                          ><span class="crypto__date">2016 oct 01</span
+                          ><span class="crypto__hour">15:00:29</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">600</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">15</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <i class="la la-sync on_hold"></i>
+                      </td>
+                      <td class="crypto_table__data">
+                        <a href="#" class="crypto__remove"
+                          ><i class="la la-trash"> </i
+                        ></a>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data">
+                        <span class="crypto__time"
+                          ><span class="crypto__date">2016 oct 01</span
+                          ><span class="crypto__hour">15:00:29</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">600</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">15</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <i class="la la-sync on_hold"></i>
+                      </td>
+                      <td class="crypto_table__data">
+                        <a href="#" class="crypto__remove"
+                          ><i class="la la-trash"> </i
+                        ></a>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data">
+                        <span class="crypto__time"
+                          ><span class="crypto__date">2016 oct 01</span
+                          ><span class="crypto__hour">15:00:29</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">600</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">15</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <i class="la la-sync on_hold"></i>
+                      </td>
+                      <td class="crypto_table__data">
+                        <a href="#" class="crypto__remove"
+                          ><i class="la la-trash"> </i
+                        ></a>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data">
+                        <span class="crypto__time"
+                          ><span class="crypto__date">2016 oct 01</span
+                          ><span class="crypto__hour">15:00:29</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">600</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">15</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <i class="la la-sync on_hold"></i>
+                      </td>
+                      <td class="crypto_table__data">
+                        <a href="#" class="crypto__remove"
+                          ><i class="la la-trash"> </i
+                        ></a>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data">
+                        <span class="crypto__time"
+                          ><span class="crypto__date">2016 oct 01</span
+                          ><span class="crypto__hour">15:00:29</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">600</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">15</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <i class="la la-sync on_hold"></i>
+                      </td>
+                      <td class="crypto_table__data">
+                        <a href="#" class="crypto__remove"
+                          ><i class="la la-trash"> </i
+                        ></a>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data">
+                        <span class="crypto__time"
+                          ><span class="crypto__date">2016 oct 01</span
+                          ><span class="crypto__hour">15:00:29</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">600</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">15</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <i class="la la-check-circle success"></i>
+                      </td>
+                      <td class="crypto_table__data">
+                        <a href="#" class="crypto__remove"
+                          ><i class="la la-trash"> </i
+                        ></a>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data">
+                        <span class="crypto__time"
+                          ><span class="crypto__date">2016 oct 01</span
+                          ><span class="crypto__hour">15:00:29</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <span class="crypto__number price_down"
+                          ><span class="crypto__value">600</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">15</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <i class="la la-times-circle failed"></i>
+                      </td>
+                      <td class="crypto_table__data">
+                        <a href="#" class="crypto__remove"
+                          ><i class="la la-trash"></i
+                        ></a>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data">
+                        <span class="crypto__time"
+                          ><span class="crypto__date">2016 oct 01</span
+                          ><span class="crypto__hour">15:00:29</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">600</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">15</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <i class="la la-sync on_hold"></i>
+                      </td>
+                      <td class="crypto_table__data">
+                        <a href="#" class="crypto__remove"
+                          ><i class="la la-trash"></i
+                        ></a>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data">
+                        <span class="crypto__time"
+                          ><span class="crypto__date">2016 oct 01</span
+                          ><span class="crypto__hour">15:00:29</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">600</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">15</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <i class="la la-check-circle success"></i>
+                      </td>
+                      <td class="crypto_table__data">
+                        <a href="#" class="crypto__remove"
+                          ><i class="la la-trash"> </i
+                        ></a>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data">
+                        <span class="crypto__time"
+                          ><span class="crypto__date">2016 oct 01</span
+                          ><span class="crypto__hour">15:00:29</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <span class="crypto__number price_down"
+                          ><span class="crypto__value">600</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">15</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <i class="la la-times-circle failed"></i>
+                      </td>
+                      <td class="crypto_table__data">
+                        <a href="#" class="crypto__remove"
+                          ><i class="la la-trash"></i
+                        ></a>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data">
+                        <span class="crypto__time"
+                          ><span class="crypto__date">2016 oct 01</span
+                          ><span class="crypto__hour">15:00:29</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">600</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">15</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data">
+                        <i class="la la-sync on_hold"></i>
+                      </td>
+                      <td class="crypto_table__data">
+                        <a href="#" class="crypto__remove"
+                          ><i class="la la-trash"> </i
+                        ></a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+  
+          <div class="crypto__col">
+            <div class="crypto__section has-table">
+              <div class="crypto__head">
+                <h3 class="crypto__title">orders list</h3>
+              </div>
+              <div class="crypto__body">
+                <table class="crypto__table" id="crypto_market">
+                  <thead class="crypto_table__head">
+                    <tr class="crypto_table__row">
+                      <th class="crypto__heading">market size</th>
+                      <th class="crypto__heading">price</th>
+                      <th class="crypto__heading">my price</th>
+                    </tr>
+                  </thead>
+                  <tbody class="crypto_table__body">
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data crypto_table__size">
+                        <span class="crypto__number">0.052</span>
+                      </td>
+                      <td class="crypto_table__data crypto_table__price">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">599</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">07</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data crypto_table__myprice">
+                        <span class="crypto__number">__</span>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data crypto_table__size">
+                        <span class="crypto__number">0.052</span>
+                      </td>
+                      <td class="crypto_table__data crypto_table__price">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">599</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">07</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data crypto_table__myprice">
+                        <span class="crypto__number">__</span>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data crypto_table__size">
+                        <span class="crypto__number">0.052</span>
+                      </td>
+                      <td class="crypto_table__data crypto_table__price">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">599</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">07</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data crypto_table__myprice">
+                        <span class="crypto__number">__</span>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data crypto_table__size">
+                        <span class="crypto__number">0.052</span>
+                      </td>
+                      <td class="crypto_table__data crypto_table__price">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">599</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">07</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data crypto_table__myprice">
+                        <span class="crypto__number">__</span>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data crypto_table__size">
+                        <span class="crypto__number">0.052</span>
+                      </td>
+                      <td class="crypto_table__data crypto_table__price">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">599</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">07</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data crypto_table__myprice">
+                        <span class="crypto__number">__</span>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data crypto_table__size">
+                        <span class="crypto__number">0.052</span>
+                      </td>
+                      <td class="crypto_table__data crypto_table__price">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">599</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">07</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data crypto_table__myprice">
+                        <span class="crypto__number">__</span>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data crypto_table__size">
+                        <span class="crypto__number">0.052</span>
+                      </td>
+                      <td class="crypto_table__data crypto_table__price">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">599</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">07</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data crypto_table__myprice">
+                        <span class="crypto__number">__</span>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data crypto_table__size">
+                        <span class="crypto__number">0.052</span>
+                      </td>
+                      <td class="crypto_table__data crypto_table__price">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">599</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">07</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data crypto_table__myprice">
+                        <span class="crypto__number">__</span>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data crypto_table__size">
+                        <span class="crypto__number">0.052</span>
+                      </td>
+                      <td class="crypto_table__data crypto_table__price">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">599</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">07</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data crypto_table__myprice">
+                        <span class="crypto__number">__</span>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data crypto_table__size">
+                        <span class="crypto__number">0.052</span>
+                      </td>
+                      <td class="crypto_table__data crypto_table__price">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">599</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">07</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data crypto_table__myprice">
+                        <span class="crypto__number">__</span>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data crypto_table__size">
+                        <span class="crypto__number">0.052</span>
+                      </td>
+                      <td class="crypto_table__data crypto_table__price">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">599</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">07</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data crypto_table__myprice">
+                        <span class="crypto__number">__</span>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data crypto_table__size">
+                        <span class="crypto__number">0.052</span>
+                      </td>
+                      <td class="crypto_table__data crypto_table__price">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">599</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">07</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data crypto_table__myprice">
+                        <span class="crypto__number">__</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tfoot class="crypto_table__foot">
+                    <tr class="crypto_table__row">
+                      <th class="crypto__heading">spread amount</th>
+                      <th class="crypto__heading"></th>
+                      <th class="crypto__heading">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">0</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">04</span
+                          ><span class="crypto__currency">USD</span></span
+                        >
+                      </th>
+                    </tr>
+                  </tfoot>
+                </table>
+                <table class="crypto__table" id="crypto_market">
+                  <tbody class="crypto_table__body">
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data crypto_table__size">
+                        <span class="crypto__number">0.052</span>
+                      </td>
+                      <td class="crypto_table__data crypto_table__price">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">599</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">07</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data crypto_table__myprice">
+                        <span class="crypto__number">__</span>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data crypto_table__size">
+                        <span class="crypto__number">0.052</span>
+                      </td>
+                      <td class="crypto_table__data crypto_table__price">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">599</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">07</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data crypto_table__myprice">
+                        <span class="crypto__number">__</span>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data crypto_table__size">
+                        <span class="crypto__number">0.052</span>
+                      </td>
+                      <td class="crypto_table__data crypto_table__price">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">599</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">07</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data crypto_table__myprice">
+                        <span class="crypto__number">__</span>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data crypto_table__size">
+                        <span class="crypto__number">0.052</span>
+                      </td>
+                      <td class="crypto_table__data crypto_table__price">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">599</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">07</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data crypto_table__myprice">
+                        <span class="crypto__number">__</span>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data crypto_table__size">
+                        <span class="crypto__number">0.052</span>
+                      </td>
+                      <td class="crypto_table__data crypto_table__price">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">599</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">07</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data crypto_table__myprice">
+                        <span class="crypto__number">__</span>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data crypto_table__size">
+                        <span class="crypto__number">0.052</span>
+                      </td>
+                      <td class="crypto_table__data crypto_table__price">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">599</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">07</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data crypto_table__myprice">
+                        <span class="crypto__number">__</span>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data crypto_table__size">
+                        <span class="crypto__number">0.052</span>
+                      </td>
+                      <td class="crypto_table__data crypto_table__price">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">599</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">07</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data crypto_table__myprice">
+                        <span class="crypto__number">__</span>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data crypto_table__size">
+                        <span class="crypto__number">0.052</span>
+                      </td>
+                      <td class="crypto_table__data crypto_table__price">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">599</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">07</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data crypto_table__myprice">
+                        <span class="crypto__number">__</span>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data crypto_table__size">
+                        <span class="crypto__number">0.052</span>
+                      </td>
+                      <td class="crypto_table__data crypto_table__price">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">599</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">07</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data crypto_table__myprice">
+                        <span class="crypto__number">__</span>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data crypto_table__size">
+                        <span class="crypto__number">0.052</span>
+                      </td>
+                      <td class="crypto_table__data crypto_table__price">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">599</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">07</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data crypto_table__myprice">
+                        <span class="crypto__number">__</span>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data crypto_table__size">
+                        <span class="crypto__number">0.052</span>
+                      </td>
+                      <td class="crypto_table__data crypto_table__price">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">599</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">07</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data crypto_table__myprice">
+                        <span class="crypto__number">__</span>
+                      </td>
+                    </tr>
+                    <tr class="crypto_table__row">
+                      <td class="crypto_table__data crypto_table__size">
+                        <span class="crypto__number">0.052</span>
+                      </td>
+                      <td class="crypto_table__data crypto_table__price">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">599</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">07</span></span
+                        >
+                      </td>
+                      <td class="crypto_table__data crypto_table__myprice">
+                        <span class="crypto__number">__</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tfoot class="crypto_table__foot">
+                    <tr class="crypto_table__row">
+                      <th class="crypto__heading">spread amount</th>
+                      <th class="crypto__heading"></th>
+                      <th class="crypto__heading">
+                        <span class="crypto__number price_up"
+                          ><span class="crypto__value">0</span
+                          ><span class="crypto__divider">.</span
+                          ><span class="crypto__fractional">04</span
+                          ><span class="crypto__currency">USD</span></span
+                        >
+                      </th>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+
+
+      <div class="footer__left">
+        <a href="#" id="support-btn" class="bg-accent hidden-mobile">
+          <i class="la la-headset"></i>
+          <span class="footer__label hidden-tabl hidden-desktop">
+            contact support
+          </span>
+        </a>
+        <span class="copyright">
+          copyright © 2022 
+          <span class="copyright__company">
+            traders securities co.,ltd
+          </span>
+          all right reserved
+        </span>
+      </div>
+      <div class="footer__right">
+        <a href="#" id="setting-btn" class="hidden-mobile">
+          <la class="la la-cog"></la>
+          <span class="footer__label hidden-tabl hidden-desktop">
+            settings
+          </span>
+        </a>
+        <div class="footer__time">
+          <span class="footer__date">
+            27 may 2022
+          </span>
+          <span class="footer__hour">
+            17:07:00
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <div class="crypto"><a class="close" href="#" id="close_btn"><i class="la la-times"></i></a></div> -->
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "anonymizeIp", true);
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
+</html>
